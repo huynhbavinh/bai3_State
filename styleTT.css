@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    margin: 100px 50%;
+}
+
+.welcome {
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: blue;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+.mess {
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
+    background: blue;
+    position: absolute;
+    color: #fff;
+    top: 140%;
+    right: -70px;
+}
+
+.container:hover .mess {
+    display: block;
+}
+
+.mess:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 15%;
+    top: -20%;
+    border-bottom: 12px solid blue;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}

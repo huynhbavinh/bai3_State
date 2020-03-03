@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(235, 231, 225);
+}
+
+header {
+    background-color: black;
+}
+
+#menu>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+#menu>ul>li>div.menu-con {
+    display: none;
+}
+
+#menu>ul>li>div.menu-con>ul {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#menu>ul>li>a {
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+#menu>ul>li:hover {
+    background-color: #333333;
+}
+
+#menu>ul>li:hover>div.menu-con:not(#short) {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 500px;
+    display: inline-block;
+    background-color: white;
+}
+
+#menu>ul>li:hover>div.menu-con#short {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 333px;
+    display: inline-block;
+    background-color: white;
+}
+
+#menu>ul>li:hover>div.menu-con#nghe-si {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 110px;
+    display: inline-block;
+    background-color: white;
+}
+
+#menu>ul>li>div.menu-con>ul>li:hover:not(.tieu-de) {
+    background-color: turquoise;
+    width: 100%;
+}
+
+#menu>ul>li>div.menu-con>ul>li {
+    padding: 5px;
+}
+
+#menu>ul>li>div.menu-con>ul>li a {
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+}
